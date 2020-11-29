@@ -19,3 +19,6 @@ import json
 with open("demo.json","r") as read_file:
     data = json.load(read_file)
     print(data)
+    print(type(data))
+
+

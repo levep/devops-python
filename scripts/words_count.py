@@ -14,7 +14,7 @@ def print_dictionary(dic, file_name):
         print('{:>20} {:>20}'.format(key, dic[key]))
 
 def main():
-    # file_name = input("Please insert file name to work with: ")
+    file_name = input("Please insert file name to work with: ")
     alpha_statistic = {}
     with open(file_name,'r') as f:
         lines = f.readlines()

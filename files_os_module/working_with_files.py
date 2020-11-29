@@ -14,15 +14,15 @@
 # print(f.read())
 
 ## read and print whole file :
-# with open('test.txt','r') as f:
+# with open('C:\\Users\\lev\\Documents\\OpsGuru\\projects\\Devops-course\\devops-python\\files_os_module\\test.txt','r') as f:
 #     f_contents = f.read()
 #     print(f_contents)
 
 ## read and print line by line file:
 # with open('test.txt','r') as f:
-# with open('test.txt','r') as f:
+# with open('test.txt','r') as fa:
 #     # f_contents = f.readlines()
-#     f_contents = f.readlines()
+#     f_contents = fa.readlines()
 #     print(f_contents)
 
 ## read and print single line, first one every time we call function readline will read next line (copy and show)
@@ -39,9 +39,9 @@
 
 ## More control for reading , explanation of read buffer
 # with open('test.txt','r') as f:
-#     f_contents = f.read()
-    # f_contents = f.read(100) # copy and explain
-    # print(f_contents, end='')
+#     # f_contents = f.read()
+#     f_contents = f.read(100) # copy and explain
+#     print(f_contents, end='')
 
 ## More contr eol for big files with while and EOF condition in while loop, also f.tell() and f.seek()
 # with open('test.txt','r') as f:
@@ -88,7 +88,7 @@
 #  suppose you want to make a subfolder under your home folder: $HOMEPATH/python-project/project1/temp
 # folder_name = os.path.join(os.environ['HOMEPATH'],'python-project','project1','temp')
 # os.makedirs(folder_name)
-
+# class
 ## Walking throught directories and files :
 # for dirpath, dirname, filename in os.walk(os.environ['HOMEPATH']):
 #     print('Current path',dirpath)

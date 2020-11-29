@@ -30,7 +30,7 @@
 
 ## Let's add more code , with differnt broken line
 # try:
-#     f = open('test.txt','r') # file open fixed
+#     # f = open('test.txt','r') # file open fixed
 #     var = bad_var # bad varibale
 # except FileNotFoundError as e: # add and show as e, print(e)
 #     print("Sorry this file isn't exist!")
@@ -38,6 +38,7 @@
 # except Exception as e: # add and show as e, print(e)
 #     print("Something went wrong!")
 #     print(e)
+#     print(type(e))
 
 ## Else block
 # try:
@@ -61,17 +62,17 @@
 
 ## Log module
 
-# import logging
+import logging
 
-# logging.basicConfig(filename='example.log',level=logging.DEBUG)
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
-# try:
-#     f = open('test.txt','r')
-# except Exception as e:
-#     logging.error(e)
-# else:
-#     print(f.read())
-#     logging.info("end file {} manipulation".format(f.name))
-#     f.close()
-# finally:
-#     logging.info("from finally block of exception")
+try:
+    f = open('test_.txt','r')
+except Exception as e:
+    logging.error(e)
+else:
+    print(f.read())
+    logging.info("end file {} manipulation".format(f.name))
+    f.close()
+finally:
+    logging.info("from finally block of exception")

@@ -20,8 +20,9 @@
 
 ## Generator expressions
 
-# my_nums = list(x*x for x in [1,2,3,4,5])
-# my_sum = sum([x*x for x in range(1,10)])
+
+my_nums = list(x*x for x in [1,2,3,4,5])
+my_sum = sum([x*x for x in range(1,10)])
 
 # print (my_nums)
 # print (my_sum)
